@@ -17,7 +17,7 @@ const { title } = Astro.props;
   </head>
   <body>
     <main
-      class="w-3/4 max-w-[1024px] flex flex-col px-[5%] py-[5%] antialiased max-sm:w-full pb-20"
+      class="w-3/4 print:w-full max-w-[1024px] flex flex-col px-[5%] py-[5%] antialiased max-sm:w-full pb-20"
     >
       <slot />
     </main>
@@ -26,23 +26,23 @@ const { title } = Astro.props;
 
 <style is:global>
   @font-face {
-    font-family: "InterTight";
-    src: url("../../public/fonts/inter-tight/InterTight-VariableFont_wght.ttf");
+    font-family: "Inter Tight";
+    src: url("/fonts/inter-tight/InterTight-VariableFont_wght.ttf");
   }
 
   @font-face {
-    font-family: "JetBrainsMono";
-    src: url("../../public/fonts/jetbrains-mono/JetBrainsMono-VariableFont_wght.ttf");
+    font-family: "JetBrains Mono";
+    src: url("/fonts/jetbrains-mono/JetBrainsMono-VariableFont_wght.ttf");
   }
 
   :root {
-    font-family: "JetBrainsMono";
+    font-family: "JetBrains Mono";
     color-scheme: light;
   }
 
   h1,
   h2 {
-    font-family: "InterTight";
+    font-family: "Inter Tight";
   }
 
   * {

@@ -7,7 +7,7 @@
       "name": "Mérida, Venezuela, VET",
       "url": "https://maps.app.goo.gl/pxNP7DhySwhgW5PV9"
     },
-    "img": "/profile",
+    "img": "/profile.jpg",
     "contact": [
       {
         "name": "Gmail",
@@ -82,7 +82,7 @@
   ],
   "education": [
     {
-      "name": "Universidad Politécnica Territorial del Estado Mérida Kléber Ramírez",
+      "name": "Universidad Politécnica Territorial del Estado Mérida \"Kléber Ramírez\"",
       "time": "2020 - 2024",
       "profession": "Programa Nacional de Formación en Informática"
     }

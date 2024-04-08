@@ -15,7 +15,7 @@ const { skills } = Astro.props;
 <section class="mb-4">
   <h2 class="text-3xl font-semibold pb-2 max-sm:text-xl max-sm:p-0">Skills</h2>
   {
-    skills.map((skill, id) => {
+    skills.map((skill) => {
       key.add(skill.name);
       if (skill.keyword && key.has(skill.keyword)) {
         return (

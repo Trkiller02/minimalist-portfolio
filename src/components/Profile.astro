@@ -38,7 +38,7 @@ const {
       class="text-gray-500 hover:text-gray-700 inline-flex items-center gap-1 hover:underline-offset-4 hover:underline text-lg max-sm:text-xs"
       ><Globe class="aspect-square w-[10%]" />{address.name}</a
     >
-    <div class="m-0 p-0">
+    <div class="m-0 p-0 print:hidden">
       {
         contact.map((contact) => {
           return (
@@ -61,12 +61,33 @@ const {
         })
       }
     </div>
+    <div class="hidden flex-col print:flex">
+      <a
+        href={contact[1].url}
+        target="_blank"
+        class="hidden text-gray-700 print:inline-flex items-center"
+        title={contact[1].name}
+        rel="noopener noreferrer"
+      >
+        <Phone class="aspect-square w-[5%] pr-1" />
+        {contact[1].url.split(":")[1]}
+      </a>
+      <a
+        href={contact[0].url}
+        target="_blank"
+        class="hidden text-gray-700 print:inline-flex items-center"
+        title={contact[0].name}
+        rel="noopener noreferrer"
+      >
+        <Mail class="aspect-square w-[5%] pr-1" />{contact[0].url.split(":")[1]}
+      </a>
+    </div>
   </div>
   <span
-    class="aspect-square overflow-hidden rounded-2xl shadow-xl w-1/2 max-sm:w-3/4 mr-5 max-sm:m-0 lg:w-1/5"
+    class="aspect-square overflow-hidden rounded-2xl shadow-xl w-1/2 max-sm:w-3/4 mr-5 max-sm:m-0 lg:w-1/5 max-w-48"
   >
     <Image
-      src="/profile.jpg"
+      src={img}
       alt="profile_image"
       width={250}
       height={250}
