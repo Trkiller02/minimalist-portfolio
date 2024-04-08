@@ -1,0 +1,91 @@
+{
+  "profile": {
+    "name": "Omar Márquez",
+    "description": "Full Stack Web Developer focused on the JavaScript environment.",
+    "about": "As a full stack web developer, I have successfully completed various projects both personally and as part of a team. My priority is to foster a healthy and collaborative work environment for progressive and unhindered development. I am currently more focused on the JavaScript environment, having strong skills in React, TypeScript, Node.js, and Express.",
+    "address": {
+      "name": "Mérida, Venezuela, VET",
+      "url": "https://maps.app.goo.gl/pxNP7DhySwhgW5PV9"
+    },
+    "img": "/profile",
+    "contact": [
+      {
+        "name": "Gmail",
+        "url": "mailto:omarmarquez0207@gmail.com"
+      },
+      {
+        "name": "Phone",
+        "url": "tel:+584247150973"
+      },
+      {
+        "name": "Github",
+        "url": "https://github.com/Trkiller02"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "HTML",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+    },
+    {
+      "name": "CSS",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+      "name": "JavaScript",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+      "name": "TypeScript",
+      "url": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "Node.js",
+      "url": "https://nodejs.org/en"
+    },
+    {
+      "name": "React",
+      "url": "https://react.dev/"
+    },
+    {
+      "name": "Next.js",
+      "keyword": "React",
+      "url": "https://nextjs.org/"
+    },
+    {
+      "name": "Astro.js",
+      "keyword": "React",
+      "url": "https://astro.build/"
+    },
+    {
+      "name": "TailwindCSS",
+      "url": "https://tailwindcss.com/"
+    },
+    {
+      "name": "Express",
+      "url": "https://expressjs.com/"
+    },
+    {
+      "name": "NestJS",
+      "keyword": "Express",
+      "url": "https://nestjs.com/"
+    },
+    {
+      "name": "MySQL",
+      "url": "https://www.mysql.com/"
+    },
+    {
+      "name": "JavaScript / TypeScript ORMs",
+      "keyword": "MySQL"
+    }
+  ],
+  "education": [
+    {
+      "name": "Universidad Politécnica Territorial del Estado Mérida Kléber Ramírez",
+      "time": "2020 - 2024",
+      "profession": "Programa Nacional de Formación en Informática"
+    }
+  ],
+  "projects": []
+}

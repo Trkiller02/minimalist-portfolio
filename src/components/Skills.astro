@@ -1,0 +1,49 @@
+---
+interface Props {
+  skills: Array<{
+    name: string;
+    keyword?: string;
+    url?: string;
+  }>;
+}
+
+const key = new Set<string>([]);
+
+const { skills } = Astro.props;
+---
+
+<section class="mb-4">
+  <h2 class="text-3xl font-semibold pb-2 max-sm:text-xl max-sm:p-0">Skills</h2>
+  {
+    skills.map((skill, id) => {
+      key.add(skill.name);
+      if (skill.keyword && key.has(skill.keyword)) {
+        return (
+          <a
+            href={skill.url ?? "#"}
+            title={`About ${skill.name}`}
+            class={
+              "inline-flex px-4 py-2 whitespace-nowrap transition-colors font-medium border-dashed border-y-2 border-gray-500 text-gray-500 bg-transparent items-center justify-center hover:text-gray-700 hover:border-gray-700 my-2"
+            }
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {skill.name}
+          </a>
+        );
+      }
+
+      return (
+        <a
+          href={skill.url ?? "#"}
+          title={`About ${skill.name}`}
+          class="inline-flex px-4 py-2 whitespace-nowrap font-semibold shadow-md shadow-gray-200/50 transition-colors bg-transparent border-2 border-gray-500 text-gray-500 rounded-xl m-2 items-center justify-center hover:text-gray-700 hover:border-gray-700"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {skill.name}
+        </a>
+      );
+    })
+  }
+</section>

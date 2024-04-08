@@ -1,0 +1,6 @@
+{
+  "cSpell.language": "en,es-ES",
+  "cSpell.words": ["gmail", "Kléber", "Márquez"],
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all"
+}

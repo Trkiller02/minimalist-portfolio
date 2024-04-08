@@ -1,0 +1,14 @@
+---
+interface Props {
+  about: string;
+}
+
+const { about } = Astro.props;
+---
+
+<section class="my-8">
+  <h2 class="text-3xl font-semibold pb-2 max-sm:text-xl max-sm:p-0">About</h2>
+  <p class="text-lg text-gray-500 pb-1 max-sm:text-sm max-sm:p-0">
+    {about}
+  </p>
+</section>

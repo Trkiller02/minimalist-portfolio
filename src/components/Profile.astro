@@ -1,0 +1,76 @@
+---
+import Image from "astro/components/Image.astro";
+import { Github, Globe, Mail, Phone } from "lucide-astro";
+
+interface Props {
+  info: {
+    name: string;
+    description: string;
+    address: {
+      name: string;
+      url: string;
+    };
+    img: string;
+    contact: {
+      name: string;
+      url: string;
+    }[];
+  };
+}
+
+const {
+  info: { name, description, address, img, contact },
+} = Astro.props;
+---
+
+<section
+  class="flex flex-row w-full gap-7 max-sm:gap-4 items-center justify-between"
+>
+  <div class="w-full">
+    <h1 class="text-5xl font-semibold pb-2 max-sm:text-xl max-sm:p-0">
+      {name}
+    </h1>
+    <h4 class="text-2xl text-gray-400 pb-1 max-sm:text-sm max-sm:p-0">
+      {description}
+    </h4>
+    <a
+      href={address.url}
+      class="text-gray-500 hover:text-gray-700 inline-flex items-center gap-1 hover:underline-offset-4 hover:underline text-lg max-sm:text-xs"
+      ><Globe class="aspect-square w-[10%]" />{address.name}</a
+    >
+    <div class="m-0 p-0">
+      {
+        contact.map((contact) => {
+          return (
+            <a
+              href={contact.url}
+              target="_blank"
+              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-xs font-thin transition-colors border border-gray-500 bg-transparent size-10 text-gray-500 hover:bg-gray-200/30 hover:text-gray-700 hover:border-gray-700 hover:shadow-xl mr-2 max-sm:size-8"
+              title={contact.name}
+              rel="noopener noreferrer"
+            >
+              {contact.name === "Github" ? (
+                <Github class="size-5 max-sm:size-4" />
+              ) : contact.name === "Gmail" ? (
+                <Mail class="size-5 max-sm:size-4" />
+              ) : contact.name === "Phone" ? (
+                <Phone class="size-5 max-sm:size-4" />
+              ) : null}
+            </a>
+          );
+        })
+      }
+    </div>
+  </div>
+  <span
+    class="aspect-square overflow-hidden rounded-2xl shadow-xl w-1/2 max-sm:w-3/4 mr-5 max-sm:m-0 lg:w-1/5"
+  >
+    <Image
+      src="/profile.jpg"
+      alt="profile_image"
+      width={250}
+      height={250}
+      loading="eager"
+    />
+  </span>
+</section>
