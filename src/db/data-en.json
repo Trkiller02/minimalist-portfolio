@@ -11,15 +11,18 @@
     "contact": [
       {
         "name": "Gmail",
-        "url": "mailto:omarmarquez0207@gmail.com"
+        "url": "mailto:omarmarquez0207@gmail.com",
+        "icon": "Mail"
       },
       {
         "name": "Phone",
-        "url": "tel:+584247150973"
+        "url": "tel:+584247150973",
+        "icon": "Phone"
       },
       {
         "name": "Github",
-        "url": "https://github.com/Trkiller02"
+        "url": "https://github.com/Trkiller02",
+        "icon": "Github"
       }
     ]
   },
@@ -39,6 +42,10 @@
     {
       "name": "TypeScript",
       "url": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "Git",
+      "url": "https://git-scm.com/"
     },
     {
       "name": "Node.js",
@@ -77,7 +84,8 @@
     },
     {
       "name": "JavaScript / TypeScript ORMs",
-      "keyword": "MySQL"
+      "keyword": "MySQL",
+      "url": "https://typeorm.io/"
     }
   ],
   "education": [

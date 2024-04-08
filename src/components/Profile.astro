@@ -1,6 +1,9 @@
 ---
 import Image from "astro/components/Image.astro";
-import { Github, Globe, Mail, Phone } from "lucide-astro";
+import { ICONS_ENUM } from "../icons/listIcons";
+import Globe from "../icons/Globe.astro";
+import Phone from "../icons/Phone.astro";
+import Mail from "../icons/Mail.astro";
 
 interface Props {
   info: {
@@ -14,6 +17,7 @@ interface Props {
     contact: {
       name: string;
       url: string;
+      icon: string;
     }[];
   };
 }
@@ -41,6 +45,7 @@ const {
     <div class="m-0 p-0 print:hidden">
       {
         contact.map((contact) => {
+          const Icon = ICONS_ENUM[contact.icon];
           return (
             <a
               href={contact.url}
@@ -49,13 +54,7 @@ const {
               title={contact.name}
               rel="noopener noreferrer"
             >
-              {contact.name === "Github" ? (
-                <Github class="size-5 max-sm:size-4" />
-              ) : contact.name === "Gmail" ? (
-                <Mail class="size-5 max-sm:size-4" />
-              ) : contact.name === "Phone" ? (
-                <Phone class="size-5 max-sm:size-4" />
-              ) : null}
+              <Icon class="size-6 max-sm:size-4" />
             </a>
           );
         })

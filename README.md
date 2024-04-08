@@ -5,8 +5,8 @@ Simple web app that renders minimalist CV.
 ### Features
 
 - Built with libraries and frameworks:
-  - [Astro](https://astro.build/):
-  - [lucide-astro](https://lucide-astro.dzeio.com/): Lucide Icons Astro integration
+  - [Astro](https://astro.build/)
+  - Some icons from [Boxicons](https://boxicons.com/) were used
   - [TailwindCSS](https://tailwindcss.com/)
   - [Typescript](https://www.typescriptlang.org/)
 
