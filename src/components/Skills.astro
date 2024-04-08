@@ -22,9 +22,7 @@ const { skills } = Astro.props;
           <a
             href={skill.url ?? "#"}
             title={`About ${skill.name}`}
-            class={
-              "inline-flex px-4 py-2 whitespace-nowrap transition-colors font-medium border-dashed border-y-2 border-gray-500 text-gray-500 bg-transparent items-center justify-center hover:text-gray-700 hover:border-gray-700 my-2"
-            }
+            class="inline-flex px-4 py-2 whitespace-nowrap transition-colors font-medium border-dashed border-y-2 border-gray-500 text-gray-500 bg-transparent items-center justify-center hover:text-gray-700 hover:border-gray-700 my-2 max-sm:text-xs max-sm:px-1 max-sm:py-2"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -37,7 +35,7 @@ const { skills } = Astro.props;
         <a
           href={skill.url ?? "#"}
           title={`About ${skill.name}`}
-          class="inline-flex px-4 py-2 whitespace-nowrap font-semibold shadow-md shadow-gray-200/50 transition-colors bg-transparent border-2 border-gray-500 text-gray-500 rounded-xl m-2 items-center justify-center hover:text-gray-700 hover:border-gray-700"
+          class="inline-flex px-4 py-2 whitespace-nowrap font-semibold shadow-md shadow-gray-200/50 transition-colors bg-transparent border-2 border-gray-500 text-gray-500 rounded-xl m-2 items-center justify-center hover:text-gray-700 hover:border-gray-700 max-sm:text-xs max-sm:px-1 max-sm:py-2 max-sm:m-1"
           target="_blank"
           rel="noopener noreferrer"
         >
