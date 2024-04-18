@@ -6,5 +6,6 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: "https://Trkiller02.github.io",
   base: "/omarmarquezcv",
+  output: "static",
   integrations: [tailwind()],
 });
