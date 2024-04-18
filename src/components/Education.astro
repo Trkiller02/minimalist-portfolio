@@ -16,12 +16,12 @@ const { education } = Astro.props;
   </h2>
   {
     education.map((info) => (
-      <div class="my-2">
+      <div class="my-2 w-full">
         <div class="w-full flex justify-between">
           <h3 class="text-xl font-semibold pb-2 max-sm:text-sm max-sm:p-0">
             {info.name}
           </h3>
-          <span class="text-xl text-gray-700 pb-1 mx-6 max-sm:text-xs max-sm:mx-2 w-1/4 justify-end">
+          <span class="flex text-xl text-gray-700 pb-1 ml-6 max-sm:text-xs max-sm:ml-2 w-1/4 justify-end">
             {info.time}
           </span>
         </div>
