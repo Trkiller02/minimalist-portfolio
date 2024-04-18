@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: "Inter Tight";
-  src: url("/omarmarquezcv/fonts/inter-tight/InterTight-VariableFont_wght.ttf");
+  src: url("/minimalist-portfolio/fonts/inter-tight/InterTight-VariableFont_wght.ttf");
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("/omarmarquezcv/fonts/jetbrains-mono/JetBrainsMono-VariableFont_wght.ttf");
+  src: url("/minimalist-portfolio/fonts/jetbrains-mono/JetBrainsMono-VariableFont_wght.ttf");
 }
 
 :root {
