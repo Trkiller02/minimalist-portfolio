@@ -1,13 +1,16 @@
 ---
 interface Props {
   about: string;
+  english?: boolean;
 }
 
-const { about } = Astro.props;
+const { about, english } = Astro.props;
 ---
 
 <section class="my-8">
-  <h2 class="text-3xl font-semibold pb-2 max-sm:text-xl max-sm:p-0">About</h2>
+  <h2 class="text-3xl font-semibold pb-2 max-sm:text-xl max-sm:p-0" id="about">
+    {english ? "About me" : "Sobre mí"}
+  </h2>
   <p class="text-lg text-gray-500 pb-1 max-sm:text-sm max-sm:p-0">
     {about}
   </p>

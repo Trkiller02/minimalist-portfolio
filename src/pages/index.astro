@@ -1,16 +1,16 @@
 ---
-import Profile from "../components/Profile.astro";
-import Layout from "../layouts/Layout.astro";
+import Education from "@/components/Education.astro";
+import Profile from "@/components/Profile.astro";
+import Skills from "@/components/Skills.astro";
+import Layout from "@/layouts/Layout.astro";
+import About from "@/components/About.astro";
 
-import DATA_RESUME from "../db/data-en.json";
-import About from "../components/About.astro";
-import Skills from "../components/Skills.astro";
-import Education from "../components/Education.astro";
+import { profile, skills, education } from "@/db/data-es.json";
 ---
 
 <Layout title="Omar Márquez | CV">
-  <Profile info={DATA_RESUME.profile} />
-  <About about={DATA_RESUME.profile.about} />
-  <Skills skills={DATA_RESUME.skills} />
-  <Education education={DATA_RESUME.education} />
+  <Profile info={profile} />
+  <About about={profile.about} />
+  <Skills skills={skills} />
+  <Education education={education} />
 </Layout>

@@ -1,43 +1,48 @@
 {
-  "name": "Omar Márquez",
-  "description": "Desarrollador Web Full Stack enfocado en el entorno de JavaScript con experiencia en frameworks como NextJS y NestJS.",
-  "about": "Como desarrollador web full stack, he llevado a puerto diversos proyectos tanto personales como en equipo, teniendo por prioridad un entorno sano y colaborativo de trabajo para un desarrollo progresivo y sin trabas. Actualmente estoy más enfocado en el entorno de JavaScript, teniendo buenas habilidades en el uso de React, TypeScript, Node.js y Express.",
-  "address": {
-    "name": "Mérida, Venezuela, VET",
-    "url": "https://maps.app.goo.gl/pxNP7DhySwhgW5PV9",
-    "icon": "/world"
+  "profile": {
+    "name": "Omar Márquez",
+    "description": "Desarrollador Web Full Stack.",
+    "about": "He completado con éxito varios proyectos tanto personalmente como parte de un equipo. Mi prioridad es fomentar un ambiente de trabajo saludable y colaborativo para un desarrollo progresivo y sin obstáculos. Actualmente estoy más enfocado en el entorno JavaScript, teniendo fuertes habilidades en React, TypeScript, Node.js y Express.",
+    "address": {
+      "name": "Mérida, Venezuela",
+      "url": "https://maps.app.goo.gl/pxNP7DhySwhgW5PV9",
+      "icon": "/world"
+    },
+    "img": "/minimalist-portfolio/profile.jpg",
+    "contact": [
+      {
+        "name": "Gmail",
+        "url": "mailto:omarmarquez0207@gmail.com",
+        "icon": "Mail"
+      },
+      {
+        "name": "Github",
+        "url": "https://github.com/Trkiller02",
+        "icon": "Github"
+      }
+    ]
   },
-  "img": "/profile",
-  "contact": [
-    {
-      "name": "Gmail",
-      "url": "mailto:omarmarquez0207@gmail.com"
-    },
-    {
-      "name": "Phone",
-      "url": "tel:+584247150973"
-    },
-    {
-      "name": "Github",
-      "url": "https://github.com/Trkiller02"
-    }
-  ],
   "skills": [
     {
       "name": "HTML",
-      "url": "https://developer.mozilla.org/es/docs/Web/HTML"
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
     },
     {
       "name": "CSS",
-      "url": "https://developer.mozilla.org/es/docs/Web/CSS"
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
     },
     {
       "name": "JavaScript",
-      "url": "https://developer.mozilla.org/es/docs/Web/JavaScript"
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
     {
       "name": "TypeScript",
+      "keyword": "JavaScript",
       "url": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "Git",
+      "url": "https://git-scm.com/"
     },
     {
       "name": "Node.js",
@@ -45,7 +50,7 @@
     },
     {
       "name": "React",
-      "url": "https://es.react.dev/"
+      "url": "https://react.dev/"
     },
     {
       "name": "Next.js",
@@ -53,12 +58,11 @@
       "url": "https://nextjs.org/"
     },
     {
-      "name": "Astro.js",
-      "keyword": "React",
+      "name": "Astro",
       "url": "https://astro.build/"
     },
     {
-      "name": "TailwindCSS",
+      "name": "Tailwind CSS",
       "url": "https://tailwindcss.com/"
     },
     {
@@ -71,19 +75,22 @@
       "url": "https://nestjs.com/"
     },
     {
+      "name": "PostgreSQL",
+      "url": "https://www.postgresql.org/"
+    },
+    {
       "name": "MySQL",
       "url": "https://www.mysql.com/"
     },
     {
-      "name": "JavaScript / TypeScript ORMs",
-      "keyword": "MySQL"
+      "name": "JavaScript / TypeScript ORMs"
     }
   ],
   "education": [
     {
-      "name": "Universidad Politécnica Territorial del Estado Mérida Kléber Ramírez",
+      "name": "Universidad Politécnica Territorial del Estado Mérida \"Kléber Ramírez\"",
       "time": "2020 - 2024",
-      "role": "PNF. Informática"
+      "profession": "Programa Nacional de Formación en Informática"
     }
   ],
   "projects": []

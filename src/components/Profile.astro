@@ -2,8 +2,6 @@
 import Image from "astro/components/Image.astro";
 import { ICONS_ENUM } from "../icons/listIcons";
 import Globe from "../icons/Globe.astro";
-import Phone from "../icons/Phone.astro";
-import Mail from "../icons/Mail.astro";
 
 interface Props {
   info: {
@@ -20,6 +18,7 @@ interface Props {
       icon: string;
     }[];
   };
+  english?: boolean;
 }
 
 const {
@@ -28,18 +27,20 @@ const {
 ---
 
 <section
-  class="flex flex-row w-full gap-7 max-sm:gap-4 items-center justify-between"
+  class="flex flex-row w-full gap-7 max-sm:gap-4 items-center justify-between print:mt-[7%]"
 >
   <div class="w-full">
     <h1 class="text-5xl font-semibold pb-2 max-sm:text-xl max-sm:p-0">
       {name}
     </h1>
-    <h4 class="text-2xl text-gray-400 pb-1 max-sm:text-sm max-sm:p-0">
+    <h4
+      class="text-2xl text-gray-600 hover:text-gray-800 pb-1 max-sm:text-sm max-sm:p-0"
+    >
       {description}
     </h4>
     <a
       href={address.url}
-      class="text-gray-500 hover:text-gray-700 inline-flex items-center gap-1 hover:underline-offset-4 hover:underline text-lg max-sm:text-xs"
+      class="text-gray-400 hover:text-gray-600 inline-flex items-center gap-1 hover:underline-offset-4 hover:underline text-lg max-sm:text-xs"
       ><Globe class="aspect-square w-[10%]" />{address.name}</a
     >
     <div class="m-0 p-0 print:hidden">
@@ -50,7 +51,7 @@ const {
             <a
               href={contact.url}
               target="_blank"
-              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-xs font-thin transition-colors border border-gray-500 bg-transparent size-10 text-gray-500 hover:bg-gray-200/30 hover:text-gray-700 hover:border-gray-700 hover:shadow-xl mr-2 max-sm:size-8"
+              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-xs font-thin transition-colors size-10 hover:bg-gray-300/70  hover:shadow-xl mr-2 max-sm:size-8 bg-gray-200/80"
               title={contact.name}
               rel="noopener noreferrer"
             >
@@ -61,16 +62,25 @@ const {
       }
     </div>
     <div class="hidden flex-col print:flex">
-      <a
-        href={contact[1].url}
-        target="_blank"
-        class="hidden text-gray-700 print:inline-flex items-center"
-        title={contact[1].name}
-        rel="noopener noreferrer"
-      >
-        <Phone class="aspect-square w-[5%] pr-1" />
-        {contact[1].url.split(":")[1]}
-      </a>
+      {
+        contact.map((contact) => {
+          const Icon = ICONS_ENUM[contact.icon];
+          return (
+            <a
+              href={contact.url}
+              target="_blank"
+              class="hidden text-gray-700 print:inline-flex items-center"
+              title={contact.name}
+              rel="noopener noreferrer"
+            >
+              <Icon class="aspect-square w-[5%] pr-1" />
+              {contact.url.startsWith("mail")
+                ? contact.url.split(":")[1]
+                : contact.url}
+            </a>
+          );
+        })
+      }
       <a
         href={contact[0].url}
         target="_blank"
@@ -78,7 +88,6 @@ const {
         title={contact[0].name}
         rel="noopener noreferrer"
       >
-        <Mail class="aspect-square w-[5%] pr-1" />{contact[0].url.split(":")[1]}
       </a>
     </div>
   </div>

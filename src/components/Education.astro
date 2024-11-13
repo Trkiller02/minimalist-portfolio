@@ -5,14 +5,18 @@ interface Props {
     time: string;
     profession: string;
   }>;
+  english?: boolean;
 }
 
-const { education } = Astro.props;
+const { education, english } = Astro.props;
 ---
 
 <section class="my-4">
-  <h2 class="text-3xl font-semibold pb-2 max-sm:text-xl max-sm:p-0">
-    Education
+  <h2
+    class="text-3xl font-semibold pb-2 max-sm:text-xl max-sm:p-0"
+    id="education"
+  >
+    {english ? "Education" : "Educación"}
   </h2>
   {
     education.map((info) => (

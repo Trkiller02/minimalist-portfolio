@@ -1,10 +1,10 @@
 {
   "profile": {
     "name": "Omar Márquez",
-    "description": "Full Stack Web Developer focused on the JavaScript environment.",
-    "about": "As a full stack web developer, I have successfully completed various projects both personally and as part of a team. My priority is to foster a healthy and collaborative work environment for progressive and unhindered development. I am currently more focused on the JavaScript environment, having strong skills in React, TypeScript, Node.js, and Express.",
+    "description": "Full Stack Web Developer.",
+    "about": "I have successfully completed various projects both personally and as part of a team. My priority is to foster a healthy and collaborative work environment for progressive and unhindered development. I am currently more focused on the JavaScript environment, having strong skills in React, TypeScript, Node.js, and Express.",
     "address": {
-      "name": "Mérida, Venezuela, VET",
+      "name": "Mérida, Venezuela",
       "url": "https://maps.app.goo.gl/pxNP7DhySwhgW5PV9"
     },
     "img": "/minimalist-portfolio/profile.jpg",
@@ -13,11 +13,6 @@
         "name": "Gmail",
         "url": "mailto:omarmarquez0207@gmail.com",
         "icon": "Mail"
-      },
-      {
-        "name": "Phone",
-        "url": "tel:+584247150973",
-        "icon": "Phone"
       },
       {
         "name": "Github",
@@ -41,6 +36,7 @@
     },
     {
       "name": "TypeScript",
+      "keyword": "JavaScript",
       "url": "https://www.typescriptlang.org/"
     },
     {
@@ -61,8 +57,7 @@
       "url": "https://nextjs.org/"
     },
     {
-      "name": "Astro.js",
-      "keyword": "React",
+      "name": "Astro",
       "url": "https://astro.build/"
     },
     {
@@ -79,13 +74,15 @@
       "url": "https://nestjs.com/"
     },
     {
+      "name": "PostgreSQL",
+      "url": "https://www.postgresql.org/"
+    },
+    {
       "name": "MySQL",
       "url": "https://www.mysql.com/"
     },
     {
-      "name": "JavaScript / TypeScript ORMs",
-      "keyword": "MySQL",
-      "url": "https://typeorm.io/"
+      "name": "JavaScript / TypeScript ORMs"
     }
   ],
   "education": [
