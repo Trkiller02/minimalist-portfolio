@@ -5,7 +5,11 @@ import Skills from "@/components/Skills.astro";
 import Layout from "@/layouts/Layout.astro";
 import About from "@/components/About.astro";
 
-import { profile, skills, education } from "@/db/data-es.json";
+import {
+  profile,
+  skills,
+  education,
+} from "@/db/data-es.json" with { type: "json" };
 ---
 
 <Layout title="Omar Márquez | CV">
