@@ -25,9 +25,9 @@ const { skills, english } = Astro.props;
         key.add(skill.name);
         const Icon = ICONS_ENUM[skill.name];
         const classDashed =
-          "inline-flex px-4 py-2 whitespace-nowrap transition-colors text-sm font-semibold items-center justify-center bg-gray-100 my-2 hover:bg-gray-200 max-sm:text-xs max-sm:px-1 max-sm:py-2 rounded-lg hover:shadow-sm";
+          "inline-flex px-4 py-2 whitespace-nowrap transition-colors text-sm font-semibold items-center justify-center bg-gray-100 my-2 hover:bg-gray-200 max-sm:text-xs max-sm:px-1 max-sm:py-2 rounded-lg hover:shadow-xs";
         const classSolid =
-          "inline-flex px-4 py-2 whitespace-nowrap transition-colors text-sm font-semibold items-center justify-center hover:bg-gray-300  m-2 max-sm:text-xs max-sm:px-1 max-sm:py-2 max-sm:m-1 rounded-xl hover:shadow-sm print:shadow-none bg-gray-200";
+          "inline-flex px-4 py-2 whitespace-nowrap transition-colors text-sm font-semibold items-center justify-center hover:bg-gray-300  m-2 max-sm:text-xs max-sm:px-1 max-sm:py-2 max-sm:m-1 rounded-xl hover:shadow-xs print:shadow-none bg-gray-200";
 
         return (
           <li title={`About ${skill.name}`}>

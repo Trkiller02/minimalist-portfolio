@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentcolor);
+	}
+}
+
+@font-face {
+	font-family: "Inter Tight";
+	src: url("/fonts/inter-tight/InterTight-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "JetBrains Mono";
+	src: url("/fonts/jetbrains-mono/JetBrainsMono-VariableFont_wght.ttf");
+}
+
+:root {
+	font-family: "JetBrains Mono", monospace;
+	color-scheme: light;
+}
+
+h1,
+h2 {
+	font-family: "Inter Tight", sans-serif;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100vh;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+}

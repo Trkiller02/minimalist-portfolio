@@ -8,7 +8,7 @@ interface Props {
 
 const { title, lang = "es" } = Astro.props;
 
-import "./global.css";
+import "@/styles/global.css";
 ---
 
 <!doctype html>
@@ -37,7 +37,7 @@ import "./global.css";
             id="print"
           >
             <Command />
-            Ctrl + P
+            <span class="hidden md:inline-flex">Ctrl + P</span>
           </button>
           &lt;--
           <span class="font-light">

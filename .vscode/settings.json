@@ -1,10 +1,7 @@
 {
-  "cSpell.language": "es-ES,es",
-  "cSpell.words": [
-    "gmail",
-    "Kléber",
-    "Márquez"
-  ],
-  "typescript.inlayHints.parameterTypes.enabled": true,
-  "typescript.inlayHints.parameterNames.enabled": "all"
+	"cSpell.language": "es-ES,es",
+	"cSpell.words": ["gmail", "Kléber", "Márquez"],
+	"typescript.inlayHints.parameterTypes.enabled": true,
+	"typescript.inlayHints.parameterNames.enabled": "all",
+	"typescript.tsdk": "node_modules/typescript/lib"
 }
