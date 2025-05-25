@@ -8,11 +8,15 @@ export default defineConfig({
 	i18n: {
 		defaultLocale: "es",
 		locales: ["es", "en"],
-		routing: {
-			prefixDefaultLocale: false,
-		},
 	},
 	vite: {
 		plugins: [tailwindcss()],
+		optimizeDeps: {
+			include: ["tailwindcss"],
+		},
+		build: {
+			minify: "esbuild",
+			cssMinify: "lightningcss",
+		},
 	},
 });
