@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import { ICONS_ENUM } from "../icons/listIcons";
 import Globe from "../icons/Globe.astro";
 
+import ProfilePhoto from "@/db/profile.avif";
 interface Props {
   info: {
     name: string;
@@ -11,7 +12,6 @@ interface Props {
       name: string;
       url: string;
     };
-    img: string;
     contact: {
       name: string;
       url: string;
@@ -22,7 +22,7 @@ interface Props {
 }
 
 const {
-  info: { name, description, address, img, contact },
+  info: { name, description, address, contact },
 } = Astro.props;
 ---
 
@@ -31,16 +31,16 @@ const {
 >
   <div class="w-full">
     <h1 class="text-5xl font-semibold pb-2 max-sm:text-xl max-sm:p-0">
-      {name}
-    </h1>
-    <h4
-      class="text-2xl text-gray-600 hover:text-gray-800 pb-1 max-sm:text-sm max-sm:p-0"
-    >
       {description}
-    </h4>
+    </h1>
+    <h2
+      class="text-3xl text-gray-700 hover:text-gray-800 pb-1 max-sm:text-sm max-sm:p-0"
+    >
+      {name}
+    </h2>
     <a
       href={address.url}
-      class="text-gray-400 hover:text-gray-600 inline-flex items-center gap-1 hover:underline-offset-4 hover:underline text-lg max-sm:text-xs"
+      class="text-gray-500 hover:text-gray-600 inline-flex items-center gap-1 hover:underline-offset-4 hover:underline text-lg max-sm:text-xs"
       ><Globe class="aspect-square w-[10%]" />{address.name}</a
     >
     <div class="m-0 p-0 print:hidden">
@@ -51,11 +51,12 @@ const {
             <a
               href={contact.url}
               target="_blank"
-              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-xs font-thin transition-colors size-10 hover:bg-gray-300/70  hover:shadow-xl mr-2 max-sm:size-8 bg-gray-200/80"
+              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-xs font-thin transition-colors size-10 hover:bg-gray-400/70  hover:shadow-xl mr-2 max-sm:size-8 bg-gray-300/80"
               title={contact.name}
+              aria-label={contact.name}
               rel="noopener noreferrer"
             >
-              <Icon class="size-6 max-sm:size-4" />
+              <Icon class="size-7 max-sm:size-5" />
             </a>
           );
         })
@@ -92,14 +93,13 @@ const {
     </div>
   </div>
   <span
-    class="aspect-square overflow-hidden rounded-2xl shadow-xl w-1/2 max-sm:w-3/4 mr-5 max-sm:m-0 lg:w-1/5 max-w-48"
+    class="aspect-square overflow-hidden rounded-2xl shadow-xl w-1/2 max-sm:w-3/4 lg:w-1/5 max-w-48 mr-5 max-sm:m-0 print:hidden"
   >
     <Image
-      src={img}
+      src={ProfilePhoto}
       alt="profile_image"
-      width={250}
-      height={250}
       loading="eager"
+      decoding="async"
     />
   </span>
 </section>

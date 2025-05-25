@@ -8,7 +8,6 @@
       "url": "https://maps.app.goo.gl/pxNP7DhySwhgW5PV9",
       "icon": "/world"
     },
-    "img": "/profile.jpg",
     "contact": [
       {
         "name": "Gmail",
@@ -83,7 +82,8 @@
       "url": "https://www.mysql.com/"
     },
     {
-      "name": "JavaScript / TypeScript ORMs"
+      "name": "JavaScript / TypeScript ORMs",
+      "url": "https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping"
     }
   ],
   "education": [

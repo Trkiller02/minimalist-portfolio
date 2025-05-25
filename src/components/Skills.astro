@@ -24,24 +24,27 @@ const { skills, english } = Astro.props;
       skills.map((skill) => {
         key.add(skill.name);
         const Icon = ICONS_ENUM[skill.name];
-        const classDashed =
-          "inline-flex px-4 py-2 whitespace-nowrap transition-colors text-sm font-semibold items-center justify-center bg-gray-100 my-2 hover:bg-gray-200 max-sm:text-xs max-sm:px-1 max-sm:py-2 rounded-lg hover:shadow-xs";
+        const classBasic =
+          "inline-flex px-4 py-2 whitespace-nowrap transition-colors text-sm font-semibold items-center justify-center max-sm:text-xs max-sm:px-1 max-sm:py-2 hover:shadow-xs print:shadow-none";
+
+        const classDashed = "bg-gray-200 my-2 hover:bg-gray-200 rounded-lg";
         const classSolid =
-          "inline-flex px-4 py-2 whitespace-nowrap transition-colors text-sm font-semibold items-center justify-center hover:bg-gray-300  m-2 max-sm:text-xs max-sm:px-1 max-sm:py-2 max-sm:m-1 rounded-xl hover:shadow-xs print:shadow-none bg-gray-200";
+          "bg-gray-300 m-2 hover:bg-gray-300 max-sm:m-1 rounded-xl ";
 
         return (
           <li title={`About ${skill.name}`}>
             <a
-              href={skill.url ?? "#"}
+              href={skill.url ?? ""}
+              aria-label={`About ${skill.name}`}
               target="_blank"
               rel="noopener noreferrer"
-              class={
+              class={`${classBasic} ${
                 skill.keyword && key.has(skill.keyword)
                   ? classDashed
                   : classSolid
-              }
+              }`}
             >
-              {Icon && <Icon class="mr-2 w-[50%]" />}
+              <Icon class="mr-2 w-[50%] print:hidden" />
               {skill.name}
             </a>
           </li>
