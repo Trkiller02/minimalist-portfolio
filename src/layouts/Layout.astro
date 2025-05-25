@@ -1,13 +1,15 @@
 ---
+import Header from "@/components/Header.astro";
+import Analytics from "@vercel/analytics/astro";
+import SpeedInsights from "@vercel/speed-insights/astro";
+import "@/styles/global.css";
+
 interface Props {
   title: string;
   lang?: string;
 }
 
 const { title, lang = "es" } = Astro.props;
-
-import Header from "@/components/Header.astro";
-import "@/styles/global.css";
 ---
 
 <!doctype html>
@@ -30,6 +32,8 @@ import "@/styles/global.css";
     <main>
       <slot />
     </main>
+    <Analytics />
+    <SpeedInsights />
   </body>
 </html>
 
