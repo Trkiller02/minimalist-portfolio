@@ -14,31 +14,34 @@ import Next from "./Next.astro";
 import Sql from "./Sql.astro";
 import Express from "./Express.astro";
 import NestJS from "./NestJS.astro";
-import Astro from "./Astro.astro";
+import AstroIcon from "./AstroIcon.astro";
 import Orm from "./Orm.astro";
 import PostgreSQL from "./PostgreSQL.astro";
 
 //List Icons
-export const ICONS_ENUM: Record<string, any> = {
-  // Contact Icons
-  Phone,
-  Mail,
-  Globe,
-  Github,
-  // Skills Icons
-  HTML,
-  JavaScript,
-  CSS,
-  TypeScript,
-  React,
-  Git,
-  Express,
-  NestJS,
-  Astro,
-  "PostgreSQL": PostgreSQL,
-  "MySQL": Sql,
-  "Tailwind CSS": Tailwind,
-  "Node.js": Node,
-  "Next.js": Next,
-  "JavaScript / TypeScript ORMs": Orm
-};
+export const ICONS_ENUM: Record<
+	string,
+	(_props: Record<string, unknown>) => unknown
+> = {
+	// Contact Icons
+	Phone,
+	Mail,
+	Globe,
+	Github,
+	// Skills Icons
+	HTML,
+	JavaScript,
+	CSS,
+	TypeScript,
+	React,
+	Git,
+	Express,
+	NestJS,
+	Astro: AstroIcon,
+	PostgreSQL: PostgreSQL,
+	MySQL: Sql,
+	"Tailwind CSS": Tailwind,
+	"Node.js": Node,
+	"Next.js": Next,
+	"JavaScript / TypeScript ORMs": Orm,
+} as const;
