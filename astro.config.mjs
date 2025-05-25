@@ -1,6 +1,8 @@
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 
+import vercel from "@astrojs/vercel";
+
 // https://astro.build/config
 export default defineConfig({
 	/* site: "https://trkiller02.github.io/",
@@ -9,6 +11,7 @@ export default defineConfig({
 		defaultLocale: "es",
 		locales: ["es", "en"],
 	},
+
 	vite: {
 		plugins: [tailwindcss()],
 		optimizeDeps: {
@@ -19,4 +22,8 @@ export default defineConfig({
 			cssMinify: "lightningcss",
 		},
 	},
+
+	adapter: vercel({
+		webAnalytics: true,
+	}),
 });
