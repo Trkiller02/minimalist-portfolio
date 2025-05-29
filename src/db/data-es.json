@@ -18,6 +18,11 @@
         "name": "Github",
         "url": "https://github.com/Trkiller02",
         "icon": "Github"
+      },
+      {
+        "name": "Website",
+        "url": "https://omarmarquez.is-a.dev",
+        "icon": "Globe"
       }
     ]
   },
@@ -89,7 +94,7 @@
   "education": [
     {
       "name": "Universidad Politécnica Territorial del Estado Mérida \"Kléber Ramírez\"",
-      "time": "2020 - 2024",
+      "time": "2020 - Actualmente",
       "profession": "Programa Nacional de Formación en Informática"
     }
   ],

@@ -19,7 +19,7 @@ const { skills, english } = Astro.props;
   <h2 class="text-3xl font-semibold pb-2 max-sm:text-xl max-sm:p-0" id="skills">
     {english ? "Skills" : "Habilidades"}
   </h2>
-  <ul class="flex flex-wrap text-2xl">
+  <ul class="flex flex-wrap text-2xl print:hidden">
     {
       skills.map((skill) => {
         key.add(skill.name);
@@ -45,6 +45,25 @@ const { skills, english } = Astro.props;
               }`}
             >
               <Icon class="mr-2 w-[50%] print:hidden" />
+              {skill.name}
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+  <ul class="hidden grid-cols-4 gap-4 print:grid list-disc ml-6">
+    {
+      skills.map((skill) => {
+        return (
+          <li title={`About ${skill.name}`}>
+            <a
+              href={skill.url ?? ""}
+              aria-label={`About ${skill.name}`}
+              target="_blank"
+              class="text-pretty"
+              rel="noopener noreferrer"
+            >
               {skill.name}
             </a>
           </li>

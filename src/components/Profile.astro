@@ -34,19 +34,22 @@ const {
       {description}
     </h1>
     <h2
-      class="text-3xl text-gray-700 hover:text-gray-800 pb-1 max-sm:text-sm max-sm:p-0"
+      class="text-4xl text-gray-700 hover:text-gray-800 pb-1 max-sm:text-sm max-sm:p-0"
     >
       {name}
     </h2>
-    <a
-      href={address.url}
-      class="text-gray-500 hover:text-gray-600 inline-flex items-center gap-1 hover:underline-offset-4 hover:underline text-lg max-sm:text-xs"
-      ><Globe class="aspect-square w-[10%]" />{address.name}</a
-    >
+    <address>
+      <a href={address.url}
+        ><Globe class="aspect-square w-[10%]" />{address.name}</a
+      >
+    </address>
     <div class="m-0 p-0 print:hidden">
       {
         contact.map((contact) => {
           const Icon = ICONS_ENUM[contact.icon];
+
+          if (contact.icon === "Globe") return;
+
           return (
             <a
               href={contact.url}
@@ -65,7 +68,6 @@ const {
     <div class="hidden flex-col print:flex">
       {
         contact.map((contact) => {
-          const Icon = ICONS_ENUM[contact.icon];
           return (
             <a
               href={contact.url}
@@ -74,10 +76,11 @@ const {
               title={contact.name}
               rel="noopener noreferrer"
             >
-              <Icon class="aspect-square w-[5%] pr-1" />
               {contact.url.startsWith("mail")
                 ? contact.url.split(":")[1]
-                : contact.url}
+                : contact.url.includes("//")
+                  ? contact.url.split("//")[1]
+                  : contact.url}
             </a>
           );
         })
