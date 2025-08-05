@@ -38,11 +38,15 @@ const {
     >
       {name}
     </h2>
-    <address>
-      <a href={address.url}
-        ><Globe class="aspect-square w-[10%]" />{address.name}</a
-      >
-    </address>
+    <a
+      href={address.url}
+      class="text-gray-500 hover:text-gray-600 inline-flex items-center gap-1 hover:underline-offset-4 hover:underline text-lg max-sm:text-xs"
+    >
+      <Globe class="aspect-square w-[10%]" />
+      <i>
+        {address.name}
+      </i>
+    </a>
     <div class="m-0 p-0 print:hidden">
       {
         contact.map((contact) => {
