@@ -2,7 +2,7 @@
   "profile": {
     "name": "Omar Márquez",
     "description": "Desarrollador Web Full Stack.",
-    "about": "He completado con éxito varios proyectos tanto personalmente como parte de un equipo. Mi prioridad es fomentar un ambiente de trabajo saludable y colaborativo para un desarrollo progresivo y sin obstáculos. Actualmente estoy más enfocado en el entorno JavaScript, teniendo fuertes habilidades en React, TypeScript, Node.js y Express.",
+    "about": "He completado con éxito proyectos de forma individual como formando parte de un equipo. Mi prioridad es ser productivo y proactivo en la resolución de problemas tanto como fomentar un ambiente de trabajo saludable y colaborativo para un desarrollo progresivo y sin obstáculos. Actualmente estoy enfocado en el entorno JavaScript, teniendo fuertes habilidades en React, TypeScript y Nodejs. Sin embargo he tenido experiencia desarrollando con lenguajes como PHP y Java, ya que mediante la fuerte planificación de la lógica de negocio del proyecto, el lenguaje solo se convierte en una herramienta para alcanzar los objetivos.",
     "address": {
       "name": "Mérida, Venezuela",
       "url": "https://maps.app.goo.gl/pxNP7DhySwhgW5PV9",
@@ -98,5 +98,43 @@
       "profession": "Programa Nacional de Formación en Informática"
     }
   ],
-  "projects": []
+  "projects": [],
+  "courses": [
+    {
+      "name": "Fundamentos de JavaScript",
+      "image_url": "JAVASCRIPT",
+      "time": "2024",
+      "url": "https://platzi.com/cursos/javascript/"
+    },
+    {
+      "name": "Clean Code en Javascript",
+      "image_url": "CLEAN_CODE",
+      "time": "2024",
+      "url": "https://platzi.com/cursos/javascript-clean-code/"
+    },
+    {
+      "name": "Fundamentos de TypeScript",
+      "image_url": "TYPESCRIPT",
+      "time": "2024",
+      "url": "https://platzi.com/cursos/typescript-22/"
+    },
+    {
+      "name": "TypeScript: Tipos Avanzados y Funciones",
+      "image_url": "TYPESCRIPT_TIPS",
+      "time": "2024",
+      "url": "https://platzi.com/cursos/typescript-tipos-avanzados/"
+    },
+    {
+      "name": "Frontend Developer",
+      "image_url": "FRONTEND_DEVELOPER",
+      "time": "2024",
+      "url": "https://platzi.com/cursos/frontend-developer/"
+    },
+    {
+      "name": "Curso de React.js",
+      "image_url": "REACT",
+      "time": "2024",
+      "url": "https://platzi.com/cursos/reactjs/"
+    }
+  ]
 }

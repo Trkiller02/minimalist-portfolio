@@ -4,11 +4,13 @@ import Profile from "@/components/Profile.astro";
 import Skills from "@/components/Skills.astro";
 import Layout from "@/layouts/Layout.astro";
 import About from "@/components/About.astro";
+import Courses from "@/components/Courses.astro";
 
 import {
   profile,
   skills,
   education,
+  courses,
 } from "@/db/data-es.json" with { type: "json" };
 ---
 
@@ -17,4 +19,5 @@ import {
   <About about={profile.about} />
   <Skills skills={skills} />
   <Education education={education} />
+  <Courses courses={courses} />
 </Layout>

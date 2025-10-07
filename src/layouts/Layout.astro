@@ -27,19 +27,14 @@ const { title, lang = "es" } = Astro.props;
     <title>{title}</title>
   </head>
   <body
-    class="w-3/4 print:w-11/12 max-w-[1024px] flex flex-col antialiased max-sm:w-full pb-20 px-[5%]"
+    class="w-3/5 print:w-4/5 max-w-5xl flex flex-col antialiased max-sm:w-full pb-20 px-[5%] pt-5 overflow-x-hidden"
   >
     <Header lang={lang} />
     <main>
       <slot />
     </main>
+
     <Analytics />
     <SpeedInsights />
   </body>
 </html>
-
-<script>
-  document
-    .getElementById("print")
-    ?.addEventListener("click", () => window.print());
-</script>

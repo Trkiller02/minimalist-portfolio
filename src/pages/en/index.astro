@@ -1,15 +1,17 @@
 ---
 import Profile from "@/components/Profile.astro";
 import Layout from "@/layouts/Layout.astro";
+import About from "@/components/About.astro";
+import Skills from "@/components/Skills.astro";
+import Education from "@/components/Education.astro";
+import Courses from "@/components/Courses.astro";
 
 import {
     profile,
     skills,
     education,
+    courses,
 } from "@/db/data-en.json" with { type: "json" };
-import About from "@/components/About.astro";
-import Skills from "@/components/Skills.astro";
-import Education from "@/components/Education.astro";
 ---
 
 <Layout title="Omar Márquez | CV" lang="en">
@@ -17,4 +19,5 @@ import Education from "@/components/Education.astro";
     <About about={profile.about} english />
     <Skills skills={skills} english />
     <Education education={education} english />
+    <Courses courses={courses} english />
 </Layout>

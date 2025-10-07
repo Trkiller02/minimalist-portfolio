@@ -1,0 +1,104 @@
+---
+import { Image } from "astro:assets";
+import Dialog from "./ui/Dialog.astro";
+import LinkIcon from "@/icons/LinkIcon.astro";
+import { COURSES_IMAGES } from "@/db/coursesList";
+
+interface Props {
+    courses: Array<{
+        name: string;
+        image_url?: string;
+        time?: string;
+        url?: string;
+    }>;
+    english?: boolean;
+}
+
+const { courses, english } = Astro.props;
+---
+
+<section class="mt-8 mb-10 max-sm:mt-4">
+    <h2
+        class="text-3xl font-semibold mb-4 max-sm:text-xl max-sm:mb-2"
+        id="courses"
+    >
+        {english ? "Courses" : "Cursos"}
+    </h2>
+    <ul class="flex flex-col gap-4 print:list-disc print:ml-6">
+        {
+            courses.map((course, id) => {
+                return (
+                    <li title={`About ${course.name}`}>
+                        <div
+                            class="w-full flex justify-between cursor-pointer"
+                            id={`${course.name[0]}${id}-open`}
+                        >
+                            <h3 class="text-xl font-semibold  max-sm:text-sm max-sm:p-0">
+                                {course.name}
+                            </h3>
+                            <span class="flex text-xl text-gray-700 pb-1 ml-6 max-sm:text-xs max-sm:ml-2 w-1/4 justify-end whitespace-nowrap print:text-black">
+                                {course.time}
+                            </span>
+                        </div>
+                        <a
+                            href={course.url ?? ""}
+                            aria-label={`About ${course.name}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-sm text-gray-600 pb-1 max-sm:text-xs max-sm:p-0 print:text-black print:font-normal inline-flex items-center gap-1 hover:underline-offset-4 hover:underline"
+                        >
+                            <LinkIcon class="size-4 print:hidden" />
+                            {course.url}
+                        </a>
+                        <Dialog
+                            label={course.name}
+                            id={`${course.name[0]}${id}-dialog`}
+                        >
+                            <Image
+                                draggable="false"
+                                src={
+                                    COURSES_IMAGES[
+                                        course.image_url as keyof typeof COURSES_IMAGES
+                                    ]
+                                }
+                                alt={course.name.split(" ").join("")}
+                                loading="lazy"
+                                decoding="async"
+                                width={600}
+                                height={600}
+                                class="object-cover w-full h-auto aspect-square rounded-lg"
+                            />
+                        </Dialog>
+                    </li>
+                );
+            })
+        }
+    </ul>
+</section>
+
+<script>
+    const openModal = (courseName: string) =>
+        (
+            document.getElementById(`${courseName}-dialog`) as HTMLDialogElement
+        ).showModal();
+
+    const closeModal = (courseName: string) =>
+        (
+            document.getElementById(`${courseName}-dialog`) as HTMLDialogElement
+        ).close();
+
+    const triggerOpenModal = document.querySelectorAll('div[id$="-open"]');
+    const triggerCloseModal = document.querySelectorAll("button[id$=-close]");
+
+    for (const trigger of triggerOpenModal) {
+        trigger.addEventListener("click", () =>
+            openModal(`${trigger.id.split("-")[0]}`),
+        );
+    }
+
+    for (const trigger of triggerCloseModal) {
+        trigger.addEventListener("click", () =>
+            closeModal(`${trigger.id.split("-")[0]}`),
+        );
+    }
+</script>
