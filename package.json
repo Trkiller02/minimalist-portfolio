@@ -16,6 +16,7 @@
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "astro": "5.12.8",
+    "ninja-keys": "^1.2.2",
     "tailwindcss": "4.1.7",
     "typescript": "5.8.3"
   },

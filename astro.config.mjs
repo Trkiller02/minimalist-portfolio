@@ -15,7 +15,7 @@ export default defineConfig({
 	vite: {
 		plugins: [tailwindcss()],
 		optimizeDeps: {
-			include: ["tailwindcss"],
+			include: ["tailwindcss", "ninja-keys"],
 		},
 		build: {
 			minify: "esbuild",
