@@ -11,9 +11,9 @@ interface Props {
 const { education, english } = Astro.props;
 ---
 
-<section class="my-4">
+<section class="mt-8 max-sm:mt-4">
   <h2
-    class="text-3xl font-semibold pb-2 max-sm:text-xl max-sm:p-0"
+    class="text-3xl font-semibold mb-4 max-sm:text-xl max-sm:mb-2"
     id="education"
   >
     {english ? "Education" : "Educación"}
@@ -25,11 +25,11 @@ const { education, english } = Astro.props;
           <h3 class="text-xl font-semibold pb-2 max-sm:text-sm max-sm:p-0">
             {info.name}
           </h3>
-          <span class="flex text-xl text-gray-700 pb-1 ml-6 max-sm:text-xs max-sm:ml-2 w-1/4 justify-end">
+          <span class="flex text-xl text-gray-700 pb-1 ml-6 max-sm:text-xs max-sm:ml-2 w-1/4 justify-end whitespace-nowrap print:text-black">
             {info.time}
           </span>
         </div>
-        <p class="text-xl text-gray-500 pb-1 max-sm:text-sm max-sm:p-0">
+        <p class="text-xl text-gray-600 pb-1 max-sm:text-sm max-sm:p-0 print:text-black print:font-normal">
           {info.profession}
         </p>
       </div>

@@ -27,27 +27,33 @@ const {
 ---
 
 <section
-  class="flex flex-row w-full gap-7 max-sm:gap-4 items-center justify-between print:mt-[7%]"
+  class="flex flex-row w-full gap-7 max-sm:gap-4 items-center justify-between print:gap-0"
 >
-  <div class="w-full">
-    <h1 class="text-5xl font-semibold pb-2 max-sm:text-xl max-sm:p-0">
+  <div class="w-full print:gap-2">
+    <h1
+      class="text-5xl font-semibold pb-2 max-sm:text-3xl max-sm:p-0 print:hidden"
+    >
       {description}
     </h1>
     <h2
-      class="text-4xl text-gray-700 hover:text-gray-800 pb-1 max-sm:text-sm max-sm:p-0"
+      class="text-4xl text-gray-700 hover:text-gray-800 max-sm:text-2xl max-sm:p-0
+       print:text-5xl print:font-semibold print:text-gray-900"
     >
       {name}
     </h2>
+    <h1 class="hidden text-3xl max-sm:text-xl max-sm:p-0 print:block mt-2">
+      {description}
+    </h1>
     <a
       href={address.url}
-      class="text-gray-500 hover:text-gray-600 inline-flex items-center gap-1 hover:underline-offset-4 hover:underline text-lg max-sm:text-xs"
+      class="text-gray-500 hover:text-gray-600 inline-flex items-center gap-1 hover:underline-offset-4 hover:underline text-lg max-sm:text-sm print:mt-1"
     >
       <Globe class="aspect-square w-[10%]" />
       <i>
         {address.name}
       </i>
     </a>
-    <div class="m-0 p-0 print:hidden">
+    <ul class="print:hidden mt-4 max-sm:m-0 flex">
       {
         contact.map((contact) => {
           const Icon = ICONS_ENUM[contact.icon];
@@ -55,52 +61,56 @@ const {
           if (contact.icon === "Globe") return;
 
           return (
-            <a
-              href={contact.url}
-              target="_blank"
-              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-xs font-thin transition-colors size-10 hover:bg-gray-400/70  hover:shadow-xl mr-2 max-sm:size-8 bg-gray-300/80"
-              title={contact.name}
-              aria-label={contact.name}
-              rel="noopener noreferrer"
-            >
-              <Icon class="size-7 max-sm:size-5" />
-            </a>
+            <li>
+              <a
+                href={contact.url}
+                target="_blank"
+                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-xs font-thin transition-colors size-10 hover:bg-gray-400/70  hover:shadow-xl mr-2 max-sm:size-8 bg-gray-300/80"
+                title={contact.name}
+                aria-label={contact.name}
+                rel="noopener noreferrer"
+              >
+                <Icon class="size-7 max-sm:size-5" />
+              </a>
+            </li>
           );
         })
       }
-    </div>
-    <div class="hidden flex-col print:flex">
+    </ul>
+    <ul class="hidden flex-col print:flex gap-1">
       {
         contact.map((contact) => {
           return (
-            <a
-              href={contact.url}
-              target="_blank"
-              class="hidden text-gray-700 print:inline-flex items-center"
-              title={contact.name}
-              rel="noopener noreferrer"
-            >
-              {contact.url.startsWith("mail")
-                ? contact.url.split(":")[1]
-                : contact.url.includes("//")
-                  ? contact.url.split("//")[1]
-                  : contact.url}
-            </a>
+            <li>
+              <a
+                href={contact.url}
+                target="_blank"
+                class="hidden text-gray-700 print:inline-flex items-center"
+                title={contact.name}
+                rel="noopener noreferrer"
+              >
+                {contact.url.startsWith("mail")
+                  ? contact.url.split(":")[1]
+                  : contact.url.includes("//")
+                    ? contact.url.split("//")[1]
+                    : contact.url}
+              </a>
+            </li>
           );
         })
       }
-      <a
+      <!-- <a
         href={contact[0].url}
         target="_blank"
         class="hidden text-gray-700 print:inline-flex items-center"
         title={contact[0].name}
         rel="noopener noreferrer"
       >
-      </a>
-    </div>
+      </a> -->
+    </ul>
   </div>
   <span
-    class="aspect-square overflow-hidden rounded-2xl shadow-xl w-1/2 max-sm:w-3/4 lg:w-1/5 max-w-48 mr-5 max-sm:m-0 print:hidden"
+    class="aspect-square overflow-y-hidden rounded-2xl shadow-xl w-1/2 max-sm:w-3/4 lg:w-3/12 max-w-48 max-sm:m-0 print:h-48 print:w-3/5"
   >
     <Image
       src={ProfilePhoto}

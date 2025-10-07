@@ -7,11 +7,13 @@ interface Props {
 const { about, english } = Astro.props;
 ---
 
-<section class="my-8">
-  <h2 class="text-3xl font-semibold pb-2 max-sm:text-xl max-sm:p-0" id="about">
-    {english ? "About me" : "Sobre mí"}
+<section class="mt-8 max-sm:mt-4">
+  <h2 class="text-3xl font-semibold mb-4 max-sm:text-xl max-sm:mb-2" id="about">
+    {english ? "About me" : "Acerca de mí"}
   </h2>
-  <p class="text-lg text-gray-500 pb-1 max-sm:text-sm max-sm:p-0">
+  <p
+    class="text-lg text-gray-500 pb-1 max-sm:text-sm max-sm:p-0 print:text-black"
+  >
     {about}
   </p>
 </section>
