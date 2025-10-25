@@ -33,17 +33,17 @@ export const ICONS_ENUM: Record<
 	JavaScript,
 	CSS,
 	TypeScript,
-	React,
+	"React.js": React,
 	Git,
 	Express,
 	NestJS,
 	Astro: AstroIcon,
 	PostgreSQL: PostgreSQL,
 	MySQL: Sql,
-	"Tailwind CSS": Tailwind,
+	TailwindCSS: Tailwind,
 	"Node.js": Node,
 	"Next.js": Next,
-	"JavaScript / TypeScript ORMs": Orm,
+	"JavaScript ORMs": Orm,
 } as const;
 
 //List Icons

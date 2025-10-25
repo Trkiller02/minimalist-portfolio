@@ -52,7 +52,7 @@
       "url": "https://nodejs.org/en"
     },
     {
-      "name": "React",
+      "name": "React.js",
       "url": "https://react.dev/"
     },
     {
@@ -65,7 +65,7 @@
       "url": "https://astro.build/"
     },
     {
-      "name": "Tailwind CSS",
+      "name": "TailwindCSS",
       "url": "https://tailwindcss.com/"
     },
     {
@@ -86,7 +86,7 @@
       "url": "https://www.mysql.com/"
     },
     {
-      "name": "JavaScript / TypeScript ORMs",
+      "name": "JavaScript ORMs",
       "url": "https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping"
     }
   ],
