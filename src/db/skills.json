@@ -1,0 +1,56 @@
+{
+  "skills": [
+    {
+      "name": "Node.js",
+      "url": "https://nodejs.org/en"
+    },
+    {
+      "name": "JavaScript",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+      "name": "TypeScript",
+      "keyword": "JavaScript",
+      "url": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "Git",
+      "url": "https://git-scm.com/"
+    },
+    {
+      "name": "GitHub",
+      "keyword": "Git",
+      "url": "https://github.com/"
+    },
+    {
+      "name": "Next.js",
+      "url": "https://nextjs.org/"
+    },
+    {
+      "name": "Astro",
+      "url": "https://astro.build/"
+    },
+    {
+      "name": "TailwindCSS",
+      "url": "https://tailwindcss.com/"
+    },
+    {
+      "name": "Express",
+      "url": "https://expressjs.com/"
+    },
+    {
+      "name": "NestJS",
+      "keyword": "Express",
+      "url": "https://nestjs.com/"
+    },
+    {
+      "name": "SQL",
+      "url": "https://en.wikipedia.org/wiki/SQL"
+    },
+    {
+      "name": "PostgreSQL",
+      "keyword": "SQL",
+      "url": "https://www.postgresql.org/"
+    }
+  ]
+}

@@ -1,104 +1,17 @@
 {
   "profile": {
     "name": "Omar Márquez",
-    "description": "Full Stack Web Developer.",
-    "about": "I have successfully completed projects both individually and as part of a team. My priority is to be productive and proactive in problem-solving, while fostering a healthy and collaborative work environment for smooth, progressive development. I am currently focused on the JavaScript environment, with strong skills in React, TypeScript, and Node.js. However, I have experience developing with languages ​​such as PHP and Java, since through thorough planning of the project's business logic, the language becomes a tool for achieving objectives.",
-    "address": {
-      "name": "Mérida, Venezuela",
-      "url": "https://maps.app.goo.gl/pxNP7DhySwhgW5PV9"
-    },
-    "contact": [
-      {
-        "name": "Email",
-        "url": "mailto:omarmarquez0207@gmail.com",
-        "icon": "Mail"
-      },
-      {
-        "name": "Github",
-        "url": "https://github.com/Trkiller02",
-        "icon": "Github"
-      },
-      {
-        "name": "Website",
-        "url": "https://omarmarquez.is-a.dev",
-        "icon": "Globe"
-      }
-    ]
+    "description": "Full-Stack Web Developer",
+    "about": "​Software Engineering student and Full-Stack Web Developer with 2 years of experience building efficient and scalable digital solutions. Being a highly driven, self-taught professional allows me to stay at the forefront of technology, mastering modern ecosystems built around TypeScript, Next.js, and PostgreSQL.\n I am highly enthusiastic about designing robust software architectures—ranging from gRPC implementations to high-performance applications with offline-first capabilities. As a responsible and committed developer, I do not just write code; I strive to deeply understand business needs to ensure that every technical effort delivers tangible value to the end product. I am eager to join a dynamic startup or innovative organization where I can take on ownership, solve critical technical challenges, and help scale projects from the ground up."
   },
-  "skills": [
-    {
-      "name": "HTML",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
-    },
-    {
-      "name": "CSS",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
-    },
-    {
-      "name": "JavaScript",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-    },
-    {
-      "name": "TypeScript",
-      "keyword": "JavaScript",
-      "url": "https://www.typescriptlang.org/"
-    },
-    {
-      "name": "Git",
-      "url": "https://git-scm.com/"
-    },
-    {
-      "name": "Node.js",
-      "url": "https://nodejs.org/en"
-    },
-    {
-      "name": "React.js",
-      "url": "https://react.dev/"
-    },
-    {
-      "name": "Next.js",
-      "keyword": "React",
-      "url": "https://nextjs.org/"
-    },
-    {
-      "name": "Astro",
-      "url": "https://astro.build/"
-    },
-    {
-      "name": "TailwindCSS",
-      "url": "https://tailwindcss.com/"
-    },
-    {
-      "name": "Express",
-      "url": "https://expressjs.com/"
-    },
-    {
-      "name": "NestJS",
-      "keyword": "Express",
-      "url": "https://nestjs.com/"
-    },
-    {
-      "name": "PostgreSQL",
-      "url": "https://www.postgresql.org/"
-    },
-    {
-      "name": "MySQL",
-      "url": "https://www.mysql.com/"
-    },
-    {
-      "name": "JavaScript ORMs",
-      "url": "https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping"
-    }
-  ],
   "education": [
     {
-      "name": "Universidad Politécnica Territorial del Estado Mérida \"Kléber Ramírez\"",
+      "name": "Territorial Polytechnic University of Mérida \"Kléber Ramírez\"",
       "image_url": "",
       "time": "2020 - 2025",
-      "profession": "Programa Nacional de Formación en Informática"
+      "profession": "Associate of Science (A.S.) in Computer Science"
     }
   ],
-  "projects": [],
   "courses": [
     {
       "name": "JavaScript Fundamentals Course",

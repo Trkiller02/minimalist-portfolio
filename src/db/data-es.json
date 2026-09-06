@@ -1,104 +1,16 @@
 {
   "profile": {
     "name": "Omar Márquez",
-    "description": "Desarrollador Web Full Stack.",
-    "about": "He completado con éxito proyectos de forma individual como formando parte de un equipo. Mi prioridad es ser productivo y proactivo en la resolución de problemas tanto como fomentar un ambiente de trabajo saludable y colaborativo para un desarrollo progresivo y sin obstáculos. Actualmente estoy enfocado en el entorno JavaScript, teniendo fuertes habilidades en React, TypeScript y Nodejs. Sin embargo he tenido experiencia desarrollando con lenguajes como PHP y Java, ya que mediante la fuerte planificación de la lógica de negocio del proyecto, el lenguaje solo se convierte en una herramienta para alcanzar los objetivos.",
-    "address": {
-      "name": "Mérida, Venezuela",
-      "url": "https://maps.app.goo.gl/pxNP7DhySwhgW5PV9",
-      "icon": "/world"
-    },
-    "contact": [
-      {
-        "name": "Gmail",
-        "url": "mailto:omarmarquez0207@gmail.com",
-        "icon": "Mail"
-      },
-      {
-        "name": "Github",
-        "url": "https://github.com/Trkiller02",
-        "icon": "Github"
-      },
-      {
-        "name": "Website",
-        "url": "https://omarmarquez.is-a.dev",
-        "icon": "Globe"
-      }
-    ]
+    "description": "Desarrollador Web Full-Stack",
+    "about": "​Ingeniero de software en formación y Desarrollador Web Full-Stack con 2 años de experiencia creando soluciones digitales eficientes. Mi naturaleza autodidacta me permite mantenerme a la vanguardia tecnológica, dominando ecosistemas modernos basados en TypeScript, Next.js, NestJS y PostgreSQL. Aporto un gran entusiasmo por la creación de arquitecturas de software sólidas; desde implementaciones gRPC hasta aplicaciones con capacidades offline-first. Como desarrollador responsable y comprometido, no solo escribo código, sino que busco entender las necesidades del negocio para asegurar que cada desarrollo técnico aporte un valor tangible al producto final. Busco integrarme a una startup u organización innovadora donde pueda asumir responsabilidades, resolver problemas críticos y escalar proyectos desde sus cimientos."
   },
-  "skills": [
-    {
-      "name": "HTML",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
-    },
-    {
-      "name": "CSS",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
-    },
-    {
-      "name": "JavaScript",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-    },
-    {
-      "name": "TypeScript",
-      "keyword": "JavaScript",
-      "url": "https://www.typescriptlang.org/"
-    },
-    {
-      "name": "Git",
-      "url": "https://git-scm.com/"
-    },
-    {
-      "name": "Node.js",
-      "url": "https://nodejs.org/en"
-    },
-    {
-      "name": "React.js",
-      "url": "https://react.dev/"
-    },
-    {
-      "name": "Next.js",
-      "keyword": "React",
-      "url": "https://nextjs.org/"
-    },
-    {
-      "name": "Astro",
-      "url": "https://astro.build/"
-    },
-    {
-      "name": "TailwindCSS",
-      "url": "https://tailwindcss.com/"
-    },
-    {
-      "name": "Express",
-      "url": "https://expressjs.com/"
-    },
-    {
-      "name": "NestJS",
-      "keyword": "Express",
-      "url": "https://nestjs.com/"
-    },
-    {
-      "name": "PostgreSQL",
-      "url": "https://www.postgresql.org/"
-    },
-    {
-      "name": "MySQL",
-      "url": "https://www.mysql.com/"
-    },
-    {
-      "name": "JavaScript ORMs",
-      "url": "https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping"
-    }
-  ],
   "education": [
     {
       "name": "Universidad Politécnica Territorial del Estado Mérida \"Kléber Ramírez\"",
-      "time": "2020 - Actualmente",
-      "profession": "Programa Nacional de Formación en Informática"
+      "time": "2020 - 2025",
+      "profession": "Técnico Superior Universitario en Informática"
     }
   ],
-  "projects": [],
   "courses": [
     {
       "name": "Fundamentos de JavaScript",

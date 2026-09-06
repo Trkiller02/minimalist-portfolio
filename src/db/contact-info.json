@@ -1,0 +1,23 @@
+{
+  "address": {
+    "name": "Mérida, Venezuela",
+    "url": "https://maps.app.goo.gl/pxNP7DhySwhgW5PV9"
+  },
+  "contact": [
+    {
+      "name": "Email",
+      "url": "mailto:omarmarquez0207@gmail.com",
+      "icon": "Mail"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/Trkiller02",
+      "icon": "GitHub"
+    },
+    {
+      "name": "Website",
+      "url": "https://omarmarquez.is-a.dev",
+      "icon": "Globe"
+    }
+  ]
+}

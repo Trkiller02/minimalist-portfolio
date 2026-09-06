@@ -1,5 +1,5 @@
 ---
-import { profile } from "@/db/data-en.json" with { type: "json" };
+import { contact } from "@/db/contact-info.json" with { type: "json" };
 import { ICONS_ENUM_KEYPAD } from "@/icons/listIcons";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import Command from "@/icons/Command.astro";
@@ -8,8 +8,6 @@ import Globe from "@/icons/Globe.astro";
 interface Props {
     lang?: string;
 }
-
-const { contact } = profile;
 
 const contactInfo = contact.map(({ name, url, icon }) => {
     const Icon = ICONS_ENUM_KEYPAD[icon];
