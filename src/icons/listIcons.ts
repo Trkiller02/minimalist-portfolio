@@ -1,18 +1,18 @@
-import HTML from "../icons/HTML.astro";
+// import HTML from "../icons/HTML.astro";
 import JavaScript from "../icons/JavaScript.astro";
 import Tailwind from "../icons/Tailwind.astro";
-import CSS from "../icons/CSS.astro";
+// import CSS from "../icons/CSS.astro";
 import Express from "./Express.astro";
 import TypeScript from "../icons/TypeScript.astro";
 import Node from "../icons/Node.astro";
-import React from "../icons/React.astro";
+// import React from "../icons/React.astro";
 import Git from "../icons/Git.astro";
-import Github from "./Github.astro";
+import GitHub from "./Github.astro";
 import Globe from "./Globe.astro";
 import Phone from "./Phone.astro";
 import Mail from "./Mail.astro";
 import Next from "./Next.astro";
-import Sql from "./Sql.astro";
+// import Sql from "./Sql.astro";
 import NestJS from "./NestJS.astro";
 import AstroIcon from "./AstroIcon.astro";
 import Orm from "./Orm.astro";
@@ -27,23 +27,19 @@ export const ICONS_ENUM: Record<
 	Phone,
 	Mail,
 	Globe,
-	Github,
+	GitHub,
 	// Skills Icons
-	HTML,
 	JavaScript,
-	CSS,
 	TypeScript,
-	"React.js": React,
 	Git,
 	Express,
 	NestJS,
 	Astro: AstroIcon,
 	PostgreSQL: PostgreSQL,
-	MySQL: Sql,
+	SQL: Orm,
 	TailwindCSS: Tailwind,
 	"Node.js": Node,
 	"Next.js": Next,
-	"JavaScript ORMs": Orm,
 } as const;
 
 //List Icons
@@ -61,7 +57,7 @@ export const ICONS_ENUM_KEYPAD: Record<string, string> = {
     d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"
   ></path></svg
 >`,
-	Github: `<svg
+	GitHub: `<svg
   xmlns="http://www.w3.org/2000/svg"
   width="16"
   height="16"

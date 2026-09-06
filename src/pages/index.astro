@@ -8,14 +8,17 @@ import Courses from "@/components/Courses.astro";
 
 import {
   profile,
-  skills,
   education,
   courses,
 } from "@/db/data-es.json" with { type: "json" };
+
+import { contact, address } from "@/db/contact-info.json" with { type: "json" };
+
+import { skills } from "@/db/skills.json" with { type: "json" };
 ---
 
 <Layout title="Omar Márquez | CV">
-  <Profile info={profile} />
+  <Profile info={{ contact, address, ...profile }} />
   <About about={profile.about} />
   <Skills skills={skills} />
   <Education education={education} />
