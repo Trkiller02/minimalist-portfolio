@@ -1,52 +1,70 @@
 {
-  "profile": {
-    "name": "Omar Márquez",
-    "description": "Desarrollador Web Full-Stack",
-    "about": "​Ingeniero de software en formación y Desarrollador Web Full-Stack con 2 años de experiencia creando soluciones digitales eficientes. Mi naturaleza autodidacta me permite mantenerme a la vanguardia tecnológica, dominando ecosistemas modernos basados en TypeScript, Next.js, NestJS y PostgreSQL. Aporto un gran entusiasmo por la creación de arquitecturas de software sólidas; desde implementaciones gRPC hasta aplicaciones con capacidades offline-first. Como desarrollador responsable y comprometido, no solo escribo código, sino que busco entender las necesidades del negocio para asegurar que cada desarrollo técnico aporte un valor tangible al producto final. Busco integrarme a una startup u organización innovadora donde pueda asumir responsabilidades, resolver problemas críticos y escalar proyectos desde sus cimientos."
-  },
-  "education": [
-    {
-      "name": "Universidad Politécnica Territorial del Estado Mérida \"Kléber Ramírez\"",
-      "time": "2020 - 2025",
-      "profession": "Técnico Superior Universitario en Informática"
-    }
-  ],
-  "courses": [
-    {
-      "name": "Fundamentos de JavaScript",
-      "image_url": "JAVASCRIPT",
-      "time": "2024",
-      "url": "https://platzi.com/cursos/javascript/"
-    },
-    {
-      "name": "Clean Code en Javascript",
-      "image_url": "CLEAN_CODE",
-      "time": "2024",
-      "url": "https://platzi.com/cursos/javascript-clean-code/"
-    },
-    {
-      "name": "Fundamentos de TypeScript",
-      "image_url": "TYPESCRIPT",
-      "time": "2024",
-      "url": "https://platzi.com/cursos/typescript-22/"
-    },
-    {
-      "name": "TypeScript: Tipos Avanzados y Funciones",
-      "image_url": "TYPESCRIPT_TIPS",
-      "time": "2024",
-      "url": "https://platzi.com/cursos/typescript-tipos-avanzados/"
-    },
-    {
-      "name": "Frontend Developer",
-      "image_url": "FRONTEND_DEVELOPER",
-      "time": "2024",
-      "url": "https://platzi.com/cursos/frontend-developer/"
-    },
-    {
-      "name": "Curso de React.js",
-      "image_url": "REACT",
-      "time": "2024",
-      "url": "https://platzi.com/cursos/reactjs/"
-    }
-  ]
+	"profile": {
+		"name": "Omar Márquez",
+		"description": "Desarrollador Web Full Stack",
+		"about": "Ingeniero de software en formación y Desarrollador Web Full Stack con 2 años de experiencia construyendo aplicaciones con TypeScript, Next.js, NestJS y PostgreSQL. Diseño APIs REST/gRPC robustas y experiencias con enfoque offline-first, siempre alineando las decisiones técnicas con las necesidades de producto y negocio."
+	},
+	"education": [
+		{
+			"name": "Universidad Politécnica Territorial del Estado Mérida \"Kléber Ramírez\"",
+			"time": "2020 - 2025",
+			"profession": "Técnico Superior Universitario en Informática",
+			"items": [
+				"Énfasis en programación estructurada y orientada a objetos.",
+				"Diseño, modelado y administración de bases de datos relacionales.",
+				"Fundamentos de ingeniería de software y ciclo de vida de desarrollo.",
+				"Conceptos de redes de computadoras y arquitectura de comunicaciones."
+			]
+		}
+	],
+	"experience": [
+		{
+			"name": "AlphaSoft Tecnologies",
+			"time": "05/24 - 02/26",
+			"profession": "Backend Developer",
+			"items": [
+				"Reduje la latencia de las API REST de 2.5s a 800ms mediante la optimización de bases de datos.",
+				"Refactoricé sistemas legados, disminuyendo la deuda técnica y los tiempos de mantenimiento en un 35%.",
+				"Lideré decisiones arquitectónicas, elevando la seguridad y concurrencia un 50%."
+			]
+		}
+	],
+	"courses": [
+		{
+			"name": "Fundamentos de JavaScript",
+			"image_url": "JAVASCRIPT",
+			"time": "2024",
+			"url": "https://platzi.com/cursos/javascript/"
+		},
+		{
+			"name": "Clean Code en Javascript",
+			"image_url": "CLEAN_CODE",
+			"time": "2024",
+			"url": "https://platzi.com/cursos/javascript-clean-code/"
+		},
+		{
+			"name": "Fundamentos de TypeScript",
+			"image_url": "TYPESCRIPT",
+			"time": "2024",
+			"url": "https://platzi.com/cursos/typescript-22/"
+		},
+		{
+			"name": "TypeScript: Tipos Avanzados y Funciones",
+			"image_url": "TYPESCRIPT_TIPS",
+			"time": "2024",
+			"url": "https://platzi.com/cursos/typescript-tipos-avanzados/"
+		},
+		{
+			"name": "Frontend Developer",
+			"image_url": "FRONTEND_DEVELOPER",
+			"time": "2024",
+			"url": "https://platzi.com/cursos/frontend-developer/"
+		},
+		{
+			"name": "Curso de React.js",
+			"image_url": "REACT",
+			"time": "2024",
+			"url": "https://platzi.com/cursos/reactjs/"
+		}
+	]
 }
