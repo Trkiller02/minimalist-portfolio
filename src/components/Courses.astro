@@ -5,21 +5,21 @@ import LinkIcon from "@/icons/LinkIcon.astro";
 import { COURSES_IMAGES } from "@/db/coursesList";
 
 interface Props {
-    courses: Array<{
-        name: string;
-        image_url?: string;
-        time?: string;
-        url?: string;
-    }>;
-    english?: boolean;
+	courses: Array<{
+		name: string;
+		image_url?: string;
+		time?: string;
+		url?: string;
+	}>;
+	english?: boolean;
 }
 
 const { courses, english } = Astro.props;
 ---
 
-<section class="mt-8 mb-10 max-sm:mt-4">
+<section class="mt-4 mb-10 max-sm:mt-4 print:hidden print:mt-0">
     <h2
-        class="text-3xl font-semibold mb-4 max-sm:text-xl max-sm:mb-2"
+        class="text-3xl font-semibold mb-4 max-sm:text-xl max-sm:mb-2 print:text-2xl print:mb-2 print:uppercase"
         id="courses"
     >
         {english ? "Courses" : "Cursos"}

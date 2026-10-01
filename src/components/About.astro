@@ -1,19 +1,21 @@
 ---
+import LayoutComponents from "./ui/LayoutComponents.astro";
+
 interface Props {
-  about: string;
-  english?: boolean;
+	about: string;
+	english?: boolean;
 }
 
 const { about, english } = Astro.props;
 ---
 
-<section class="mt-8 max-sm:mt-4">
-  <h2 class="text-3xl font-semibold mb-4 max-sm:text-xl max-sm:mb-2" id="about">
-    {english ? "About me" : "Acerca de mí"}
+<LayoutComponents>
+  <h2 class="text-3xl font-semibold mb-4 max-sm:text-xl max-sm:mb-2 print:text-xl print:mb-2 print:uppercase" id="about">
+    {english ? "Profile" : "Perfil"}
   </h2>
   <p
-    class="text-lg text-gray-500 pb-1 max-sm:text-sm max-sm:p-0 print:text-black"
+    class="text-lg text-gray-500 pb-1 max-sm:text-sm max-sm:p-0 print:text-black print:text-base"
   >
     {about}
   </p>
-</section>
+</LayoutComponents>

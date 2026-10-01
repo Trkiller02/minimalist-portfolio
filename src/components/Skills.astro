@@ -1,13 +1,14 @@
 ---
 import { ICONS_ENUM } from "../icons/listIcons";
+import LayoutComponents from "./ui/LayoutComponents.astro";
 
 interface Props {
-  skills: Array<{
-    name: string;
-    keyword?: string;
-    url?: string;
-  }>;
-  english?: boolean;
+	skills: Array<{
+		name: string;
+		keyword?: string;
+		url?: string;
+	}>;
+	english?: boolean;
 }
 
 const key = new Set<string>([]);
@@ -15,22 +16,22 @@ const key = new Set<string>([]);
 const { skills, english } = Astro.props;
 ---
 
-<section class="mt-8 max-sm:mt-4">
+<LayoutComponents>
   <h2
-    class="text-3xl font-semibold mb-4 max-sm:text-xl max-sm:mb-2"
+    class="text-3xl font-semibold mb-4 max-sm:text-xl max-sm:mb-2 print:text-xl print:mb-2 print:uppercase"
     id="skills"
   >
     {english ? "Skills" : "Habilidades"}
   </h2>
   <ul
-    class="flex flex-wrap text-2xl grid-cols-4 print:gap-1 print:grid print:text-lg"
+    class="flex flex-wrap text-2xl grid-cols-4 print:gap-1 print:grid print:text-lg print:ml-4 pb-1"
   >
     {
       skills.map((skill) => {
         key.add(skill.name);
         const Icon = ICONS_ENUM[skill.name];
         const classBasic =
-          "inline-flex px-4 py-2 print:p-0 whitespace-nowrap m-2 rounded-xl transition-colors text-sm font-semibold items-center justify-center max-sm:text-xs max-sm:px-2 max-sm:py-2 hover:shadow-xs print:shadow-none print:bg-transparent";
+          "inline-flex px-4 py-2 print:p-0 whitespace-nowrap m-2 rounded-xl transition-colors text-sm font-semibold items-center justify-center max-sm:text-xs max-sm:px-2 max-sm:py-2 hover:shadow-xs print:shadow-none print:bg-transparent print:m-0 print:list-disc print:list-item";
 
         const classDashed = "bg-gray-200 max-sm:m-1 hover:bg-gray-100";
         const classSolid = "bg-gray-300  hover:bg-gray-200 max-sm:m-1";
@@ -48,7 +49,7 @@ const { skills, english } = Astro.props;
                   : classSolid
               }`}
             >
-              <Icon class="mr-2 w-[50%]" />
+              <Icon class="mr-2 w-[50%] print:hidden" />
               {skill.name}
             </a>
           </li>
@@ -77,4 +78,4 @@ const { skills, english } = Astro.props;
       })
     }
   </ul> -->
-</section>
+</LayoutComponents>

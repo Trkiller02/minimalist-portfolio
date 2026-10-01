@@ -5,29 +5,29 @@ import Globe from "../icons/Globe.astro";
 
 import ProfilePhoto from "@/db/profile.avif";
 interface Props {
-  info: {
-    name: string;
-    description: string;
-    address: {
-      name: string;
-      url: string;
-    };
-    contact: {
-      name: string;
-      url: string;
-      icon: string;
-    }[];
-  };
-  english?: boolean;
+	info: {
+		name: string;
+		description: string;
+		address: {
+			name: string;
+			url: string;
+		};
+		contact: {
+			name: string;
+			url: string;
+			icon: string;
+		}[];
+	};
+	english?: boolean;
 }
 
 const {
-  info: { name, description, address, contact },
+	info: { name, description, address, contact },
 } = Astro.props;
 ---
 
 <section
-  class="flex flex-row w-full gap-7 max-sm:gap-4 items-center justify-between print:gap-0"
+  class="flex flex-row w-full gap-7 max-sm:gap-4 items-center justify-between print:gap-0 pb-2"
 >
   <div class="w-full print:gap-2">
     <h1
@@ -37,16 +37,16 @@ const {
     </h1>
     <h2
       class="text-4xl text-gray-700 hover:text-gray-800 max-sm:text-2xl max-sm:p-0
-       print:text-5xl print:font-semibold print:text-gray-900"
+       print:text-3xl print:font-semibold print:text-gray-900"
     >
       {name}
     </h2>
-    <h1 class="hidden text-3xl max-sm:text-xl max-sm:p-0 print:block mt-2">
+    <h1 class="hidden text-2xl print:text-2xl max-sm:text-xl max-sm:p-0 print:block mt-2 print:mt-0">
       {description}
     </h1>
     <a
       href={address.url}
-      class="text-gray-500 hover:text-gray-600 inline-flex items-center gap-1 hover:underline-offset-4 hover:underline text-lg max-sm:text-sm print:mt-1 whitespace-nowrap"
+      class="print:text-base print:mb-2 text-gray-500 hover:text-gray-600 inline-flex items-center gap-1 hover:underline-offset-4 hover:underline text-lg max-sm:text-sm print:mt-1 whitespace-nowrap"
     >
       <Globe class="aspect-square w-[10%]" />
       <i>
@@ -80,15 +80,21 @@ const {
     <ul class="hidden flex-col print:flex gap-1">
       {
         contact.map((contact) => {
+          const Icon = ICONS_ENUM[contact.icon];
+
+          if (contact.icon === "Globe") return;
+
           return (
             <li>
               <a
                 href={contact.url}
                 target="_blank"
-                class="hidden text-gray-700 print:inline-flex items-center"
+                class="hidden text-gray-700 print:inline-flex items-center whitespace-nowrap justify-center"
                 title={contact.name}
                 rel="noopener noreferrer"
               >
+                <Icon class="size-5 mr-2" />
+
                 {contact.url.startsWith("mail")
                   ? contact.url.split(":")[1]
                   : contact.url.includes("//")
@@ -110,7 +116,7 @@ const {
     </ul>
   </div>
   <span
-    class="aspect-square overflow-y-hidden rounded-2xl shadow-xl w-1/2 max-sm:w-3/4 lg:w-3/12 max-w-48 max-sm:m-0 print:h-48 print:w-3/5"
+    class="aspect-square overflow-y-hidden rounded-2xl shadow-xl w-1/2 max-sm:w-3/4 lg:w-3/12 max-w-48 max-sm:m-0 print:h-44 print:w-3/5"
   >
     <Image
       src={ProfilePhoto}

@@ -2,7 +2,7 @@
 import LayoutComponents from "./ui/LayoutComponents.astro";
 
 interface Props {
-	education: Array<{
+	experience: Array<{
 		name: string;
 		time: string;
 		profession: string;
@@ -11,21 +11,21 @@ interface Props {
 	english?: boolean;
 }
 
-const { education, english } = Astro.props;
+const { experience, english } = Astro.props;
 ---
 
 <LayoutComponents>
   <h2
     class="text-3xl font-semibold mb-4 max-sm:text-xl max-sm:mb-2 print:text-xl print:mb-2 print:uppercase"
-    id="education"
+    id="experience"
   >
-    {english ? "Education" : "Educación"}
+    {english ? "Work Experience" : "Experiencia laboral"}
   </h2>
   {
-    education.map((info) => (
+    experience.map((info) => (
       <div class="my-2 w-full pb-1">
         <div class="w-full flex justify-between">
-          <h3 class="text-xl print:text-lg font-semibold max-sm:text-sm max-sm:p-0 print:text-black ">
+          <h3 class="text-xl font-semibold max-sm:text-sm max-sm:p-0 print:text-black ">
           {info.profession}
         </h3>
           
@@ -38,7 +38,7 @@ const { education, english } = Astro.props;
         </p>
         <ul class="text-base print:text-sm mt-2 ml-10 text-gray-900">
           {info.items.map(item => (
-            <ol class=" my-1 print:my-1.5 list-disc list-item">
+            <ol class="my-1 print:my-1.5 list-disc list-item">
               {item}
             </ol>
           ))}
