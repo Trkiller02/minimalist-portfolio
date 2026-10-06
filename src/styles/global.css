@@ -21,11 +21,13 @@
 @font-face {
 	font-family: "Inter Tight";
 	src: url("/fonts/inter-tight/InterTight-VariableFont_wght.ttf");
+	font-display: swap;
 }
 
 @font-face {
 	font-family: "JetBrains Mono";
 	src: url("/fonts/jetbrains-mono/JetBrainsMono-VariableFont_wght.ttf");
+	font-display: swap;
 }
 
 :root {
